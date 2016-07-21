@@ -47,38 +47,49 @@ below are all the examples as they are default to showcase
 you can see all the code with them when run.
 So you can steal them as starting points :).
 
+a histogram
 ```
-runExample("01_hello") # a histogram
+runExample("01_hello") 
 ```
+tables and data frames
 ```
-runExample("02_text") # tables and data frames
+runExample("02_text") 
 ```
+a reactive expression - outputs change as soon as input does
 ```
-runExample("03_reactivity") # a reactive expression
+runExample("03_reactivity") 
 ```
+global variables
 ```
-runExample("04_mpg") # global variables
+runExample("04_mpg") 
 ```
+slider bars - shows animating acorss slider bars too
 ```
-runExample("05_sliders") # slider bars
+runExample("05_sliders") 
 ```
+tabbed panels - summary plot and table on tabs
 ```
-runExample("06_tabsets") # tabbed panels
+runExample("06_tabsets")
 ```
+help text and submit buttons
 ```
-runExample("07_widgets") # help text and submit buttons
+runExample("07_widgets") 
 ```
+Shiny app built from HTML
 ```
-runExample("08_html") # Shiny app built from HTML
+runExample("08_html") 
 ```
+file upload wizard
 ```
-runExample("09_upload") # file upload wizard
+runExample("09_upload") 
 ```
+file download wizard - allows to download a dataset in csv erc
 ```
-runExample("10_download") # file download wizard
+runExample("10_download") 
 ```
+An automated timer - Shows a ticking clock so responsive to the time
 ```
-runExample("11_timer") # an automated timer
+runExample("11_timer") 
 ```
 
 
