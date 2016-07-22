@@ -1,0 +1,36 @@
+---
+title: "Written_Lesson02"
+author: "Richard Griffiths"
+date: "22 July 2016"
+output: html_document
+runtime: shiny
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+##Build a user interface
+
+#Link
+[lesson2](http://shiny.rstudio.com/tutorial/lesson2/)
+
+##Raw App requires 2 files
+```
+shinyUI(fluidPage(
+))
+```
+```
+shinyServer(function(input, output) {
+})
+```
+A number of options for layout
+
+[Applicaiton Layout Guide](http://shiny.rstudio.com/articles/layout-guide.html)
+
+Lots of HTML tags available and mirror HTML elements
+
+[Customize your UI with HTML](http://shiny.rstudio.com/articles/html-tags.html)
+
+[Shiny HTML Tags Glossary](http://shiny.rstudio.com/articles/tag-glossary.html)
+

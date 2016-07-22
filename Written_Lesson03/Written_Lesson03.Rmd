@@ -1,0 +1,39 @@
+---
+title: "Written_Lesson02"
+author: "Richard Griffiths"
+date: "22 July 2016"
+output: html_document
+runtime: shiny
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+#Widgets
+
+###Link
+[lesson3](http://shiny.rstudio.com/tutorial/lesson2/)
+
+Each widget requires a name and a label
+
+e.g.
+```
+actionButton("action", label = "Action")
+```
+
+[Widget gallery](http://shiny.rstudio.com/gallery/widget-gallery.html)
+
+* actionButton -	Action Button
+* checkboxGroupInput -	A group of check boxes
+* checkboxInput -	A single check box
+* dateInput -	A calendar to aid date selection
+* dateRangeInput -	A pair of calendars for selecting a date range
+* fileInput -	A file upload control wizard
+* helpText -	Help text that can be added to an input form
+* numericInput -	A field to enter numbers
+* radioButtons -	A set of radio buttons
+* selectInput -	A box with choices to select from
+* sliderInput -	A slider bar
+* submitButton -	A submit button
+* textInput -	A field to enter text
