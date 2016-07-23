@@ -1,0 +1,60 @@
+---
+title: "Written_Lesson04"
+author: "Richard Griffiths"
+date: "23 July 2016"
+output: html_document
+runtime: shiny
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+#Display Reactive Output
+
+###Link
+[lesson4](http://shiny.rstudio.com/tutorial/lesson4/)
+
+###Output function and what they create
+Place reactive objects in shiny app
+
+* htmlOutput -	raw HTML
+* imageOutput -	image
+* plotOutput -	plot
+* tableOutput -	table
+* textOutput -	text
+* uiOutput -	raw HTML
+* verbatimTextOutput -	text
+
+e.g. in the ui.R file
+```
+     mainPanel(
+      textOutput("text1")
+      )
+```
+
+###render function and what they create
+These tell how shiny should build object
+
+* renderImage	images (saved as a link to a source file)
+* renderPlot	plots
+* renderPrint	any printed output
+* renderTable	data frame, matrix, other table like structures
+* renderText	character strings
+* renderUI	a Shiny tag object or HTML
+
+e.g. in the server.R file
+where var in the input[$]var is the name of the
+widget input from ui.R file and the text1
+is the name of the output function in the ui.R file
+```
+  output$text1 <- renderText({
+    paste("You have selected this", input$var)
+  })
+```
+
+Exercise output from this tutorial
+```
+setwd("E:/Documents/Projects/ShinyTutorial");
+runApp("Written_Lesson04/census-app", display.mode = "showcase")
+```
