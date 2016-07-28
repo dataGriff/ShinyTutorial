@@ -1,0 +1,38 @@
+---
+title: "Written_Lesson06"
+author: "Richard Griffiths"
+date: "28 July 2016"
+output: html_document
+runtime: shiny
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+#Use Reactive Expressions
+
+###Link
+[lesson6](http://shiny.rstudio.com/tutorial/lesson6/)
+
+```
+setwd('E:/Documents/Projects/ShinyTutorial/Written_Lesson06');
+install.packages("quantmod");
+runApp("stockVis")
+```
+
+###Quantmod Package
+
+* getSymbols function downloads financial data straight into R from [Yahoo Finance](http://finance.yahoo.com/) and 
+[Federal Reserve Bank of St.Louise](https://fred.stlouisfed.org/)
+* chartSeries function to display nice chart
+
+###Reactive expressions
+* Essentially caches the results
+* ONly retrives data if changes and re-caches
+* Only with reactive or render* function 
+* Works in the server.R file
+
+* Example in this lesson adjusts for inflation using [Consumer Price Index](https://fred.stlouisfed.org/series/CPIAUCNS)
+
+

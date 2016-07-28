@@ -1,0 +1,45 @@
+---
+title: "Written_Lesson05"
+author: "Richard Griffiths"
+date: "23 July 2016"
+output: html_document
+runtime: shiny
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+#Use R scripts and R Data
+
+###Link
+[lesson5](http://shiny.rstudio.com/tutorial/lesson5/)
+
+Look at census data being used
+```
+setwd("E:/Documents/Projects/ShinyTutorial");
+runApp("Written_Lesson05/census-app", display.mode = "showcase")
+```
+
+this is a [chloropleth map](https://en.wikipedia.org/wiki/Choropleth_map)
+
+save helpers.R in your app folder
+will use percent_map function in helpers.R
+
+need to run this code to do the maps
+```
+install.packages(c("maps", "mapproj"))
+```
+
+full code to get to work in my folders
+this creates chloropleth map in R plot window
+```
+setwd("E:/Documents/Projects/ShinyTutorial")
+install.packages(c("maps", "mapproj"))
+library(maps)
+library(mapproj)
+source("Written_Lesson05/census-app/helpers.R")
+counties <- readRDS("Written_Lesson05/census-app/data/counties.rds")
+percent_map(counties$white, "darkgreen", "% White")
+```
+
