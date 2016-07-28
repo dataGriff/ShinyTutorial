@@ -1,0 +1,43 @@
+---
+title: "Written_Lesson07"
+author: "Richard Griffiths"
+date: "28 July 2016"
+output: html_document
+runtime: shiny
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+#Share your apps
+
+###Link
+[lesson7](http://shiny.rstudio.com/tutorial/lesson7/)
+
+##Sharing using R studio 
+* Can share as two R files (ui.R and server.R)
+* runUrl - Zip up on a site and do 
+```
+library(shiny)
+runUrl( "<the weblink>")
+```
+* runGitHub - put in a repo and run from there
+```
+library(shiny)
+runGitHub( "<your repository name>", "<your user name>") 
+runGitHub("ShinyTest","griff182uk")
+```
+* runGist - anonymous at [gist](https://gist.github.com/)
+```
+runGist("3239667")
+```
+
+##Share as web page
+
+* [ShinyApps.io](https://www.shinyapps.io/)
+* [ShinyServer](https://github.com/rstudio/shiny-server/blob/master/README.md)
+* [ShinyServerPro](https://www.rstudio.com/products/shiny/shiny-server/)
+
+* [ShinyDevCenter](http://shiny.rstudio.com/)
+
